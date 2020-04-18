@@ -16,10 +16,7 @@ for i in range(N):
     if td < d:
         poss = "No"
         break
-    if d % 2 == 0 and td % 2 == 1:
-        poss = "No"
-        break
-    if d % 2 == 1 and td % 2 == 0:
+    if d % 2 != td % 2:
         poss = "No"
         break
 
